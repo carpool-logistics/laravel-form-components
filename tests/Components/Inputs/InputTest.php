@@ -102,7 +102,7 @@ final class InputTest extends ComponentTestCase
         $this->blade($template)
             ->assertSeeText('foo')
             ->assertSee('inline-addon')
-            ->assertSee('rounded-md');
+            ->assertSee('');
     }
 
     /** @test */

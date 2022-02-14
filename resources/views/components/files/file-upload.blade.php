@@ -10,7 +10,7 @@
          @endif
         class="space-y-4 w-full"
     >
-        <span class="file-upload__input rounded-md">
+        <span class="file-upload__input ">
             <input x-on:focus="focused = true"
                    x-on:blur="focused = false"
                    class="sr-only"
@@ -31,7 +31,7 @@
 
             <label for="{{ $id }}"
                    x-bind:class="{ 'file-upload__label--focused outline-none border-blue-300 ring-blue-300': focused }"
-                   class="file-upload__label cursor-pointer py-2 px-3 border border-slate-300 rounded-md text-sm leading-4 font-medium text-slate-700 transition shadow-sm hover:text-slate-500 active:bg-slate-50 active:text-slate-800"
+                   class="file-upload__label cursor-pointer py-2 px-3 border border-slate-300  text-sm leading-4 font-medium text-slate-700 transition shadow-sm hover:text-slate-500 active:bg-slate-50 active:text-slate-800"
             >
                 <span role="button"
                       aria-controls="{{ $id }}"

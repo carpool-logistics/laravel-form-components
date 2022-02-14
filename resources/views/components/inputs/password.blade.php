@@ -31,7 +31,7 @@
              x-bind:title="show ? '{{ __('form-components::messages.password_hide_toggle_title') }}' : '{{ __('form-components::messages.password_show_toggle_title') }}'"
              @class([
                 'trailing-icon password-toggle clickable',
-                'pr-3 flex items-center bg-white border rounded-md rounded-l-none border-l-0',
+                'pr-3 flex items-center bg-white border  rounded-l-none border-l-0',
                 'border-red-300' => $hasErrorsAndShow($name),
                 'border-slate-300 group-focus:border-blue-300' => ! $hasErrorsAndShow($name),
              ])

@@ -3,7 +3,7 @@
               :key="singleValue"
     >
         <div class="inline-block pt-1 pr-1 align-top">
-            <div class="bg-blue-100 text-blue-700 inline-table py-1 rounded-md text-xs align-top font-medium"
+            <div class="bg-blue-100 text-blue-700 inline-table py-1 text-xs align-top font-medium"
                  x-bind:class="{ 'cursor-pointer group focus:ring-2 focus:ring-blue-400': _canDeSelectAnOption() }"
                  x-bind:role="_canDeSelectAnOption() ? 'button' : null"
                  x-on:click.stop="() => { if (_canDeSelectAnOption()) { $el.focus(); toggleOptionByValue(singleValue); } }"

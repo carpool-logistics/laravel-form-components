@@ -16,7 +16,7 @@
             ...{{ $configToJs() }},
          })"
          @include('form-components::partials.select.select-directives')
-         {{ $attributes->class(['relative rounded-md focus:outline-none'])->except(['tabindex', 'data-name']) }}
+         {{ $attributes->class(['relative  focus:outline-none'])->except(['tabindex', 'data-name']) }}
          x-bind:class="{ 'focus:border-blue-300 focus:ring-opacity-50 focus:ring-4 focus:ring-blue-400': ! open }"
          tabindex="0"
          data-name="{{ \Illuminate\Support\Str::slug($name) }}"
@@ -32,7 +32,7 @@
              class="custom-select-menu z-top"
              @if ($hasLivewire()) wire:ignore.self @endif
         >
-            <div class="custom-select-menu__container | max-h-[260px] overflow-auto rounded-md">
+            <div class="custom-select-menu__container | max-h-[260px] overflow-auto ">
                 <ul x-ref="listbox"
                     role="listbox"
                     id="{{ \Illuminate\Support\Str::slug($name) }}_listbox"
