@@ -99,7 +99,7 @@ class Input extends BladeComponent
     {
         return Arr::toCssClasses([
             'form-text-container',
-            'flex rounded-sm shadow-sm relative',
+            'flex shadow-sm',
             $this->maxWidth,
             $this->containerClass,
         ]);
